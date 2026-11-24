@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 60" fill="none">
+  <rect x="0" y="0" width="40" height="40" rx="10" fill="#0284C7"/>
+  <path d="M12 28 C16 16, 24 16, 28 28 Z" fill="#FFFFFF"/>
+  <text x="50" y="26" font-family="'Plus Jakarta Sans', sans-serif" font-size="16" font-weight="800" fill="#0F172A">PUREPULSE</text>
+  <text x="50" y="38" font-family="'JetBrains Mono', monospace" font-size="8" font-weight="600" fill="#64748B" letter-spacing="1.5">BEVERAGES &amp; JUICES</text>
+</svg>

@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" fill="none">
+  <defs>
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#070C1E"/>
+      <stop offset="50%" stop-color="#0B132B"/>
+      <stop offset="100%" stop-color="#111C44"/>
+    </linearGradient>
+    <linearGradient id="accent-amber" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#F59E0B"/>
+      <stop offset="100%" stop-color="#D97706"/>
+    </linearGradient>
+    <linearGradient id="cyan-glow" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#0284C7" stop-opacity="0.2"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Deep Industrial Canvas -->
+  <rect width="1200" height="675" fill="url(#bg-grad)"/>
+
+  <!-- Blueprint Grid Overlay -->
+  <g opacity="0.12">
+    <path d="M0,75 H1200 M0,150 H1200 M0,225 H1200 M0,300 H1200 M0,375 H1200 M0,450 H1200 M0,525 H1200 M0,600 H1200" stroke="#FFFFFF" stroke-width="1"/>
+    <path d="M100,0 V675 M200,0 V675 M300,0 V675 M400,0 V675 M500,0 V675 M600,0 V675 M700,0 V675 M800,0 V675 M900,0 V675 M1000,0 V675 M1100,0 V675" stroke="#FFFFFF" stroke-width="1"/>
+  </g>
+
+  <!-- Factory Floor & Sealing Machine Technical Graphic -->
+  <g transform="translate(620, 100)">
+    <!-- Machine Frame Shadow & Chassis -->
+    <rect x="0" y="40" width="460" height="420" rx="20" fill="#0F172A" stroke="#334155" stroke-width="2"/>
+    <rect x="20" y="60" width="420" height="180" rx="12" fill="#1E293B" stroke="#475569" stroke-width="1.5"/>
+    
+    <!-- Machine Controls & Pneumatic Heads -->
+    <rect x="50" y="80" width="160" height="140" rx="8" fill="#090E1F" stroke="#0EA5E9" stroke-width="2"/>
+    <text x="70" y="115" font-family="'JetBrains Mono', monospace" font-size="12" fill="#38BDF8">PNEUMATIC PRESS</text>
+    <text x="70" y="145" font-family="'JetBrains Mono', monospace" font-size="28" font-weight="700" fill="#F59E0B">0.8 SEC</text>
+    <text x="70" y="180" font-family="'JetBrains Mono', monospace" font-size="11" fill="#94A3B8">HOT TEMP: 185°C</text>
+    <text x="70" y="200" font-family="'JetBrains Mono', monospace" font-size="11" fill="#38BDF8">COLD LOCK: ACTIVE</text>
+
+    <!-- 12 Machines Indicator -->
+    <rect x="230" y="80" width="180" height="140" rx="8" fill="#090E1F" stroke="#F59E0B" stroke-width="1.5"/>
+    <text x="245" y="110" font-family="'JetBrains Mono', monospace" font-size="11" fill="#94A3B8">CAPACITY STATUS</text>
+    <text x="245" y="145" font-family="'Plus Jakarta Sans', sans-serif" font-size="24" font-weight="800" fill="#FFFFFF">12 MACHINES</text>
+    <text x="245" y="175" font-family="'JetBrains Mono', monospace" font-size="12" fill="#10B981">● ALL LINES ONLINE</text>
+    <text x="245" y="198" font-family="'JetBrains Mono', monospace" font-size="11" fill="#94A3B8">500K+ POUCHES / MO</text>
+
+    <!-- Spout & Pouch Welding Chamber -->
+    <rect x="40" y="260" width="380" height="170" rx="10" fill="#0B132B" stroke="#2563EB" stroke-width="1.5"/>
+    <!-- Pouch Film -->
+    <path d="M100 400 L160 300 L260 300 L320 400 Z" fill="url(#cyan-glow)" stroke="#38BDF8" stroke-width="2"/>
+    <!-- Spout Boat & Cap in Welder -->
+    <rect x="195" y="275" width="30" height="25" rx="4" fill="#F59E0B" stroke="#B45309" stroke-width="1.5"/>
+    <rect x="180" y="300" width="60" height="15" rx="3" fill="#E2E8F0"/>
+    <!-- Heat/Laser welding arcs -->
+    <line x1="170" y1="315" x2="250" y2="315" stroke="#F59E0B" stroke-width="4" stroke-linecap="round"/>
+    <circle cx="210" cy="315" r="8" fill="#EF4444" opacity="0.6"/>
+  </g>
+
+  <!-- Left Side Typography & Badges -->
+  <g transform="translate(80, 160)">
+    <!-- Badge -->
+    <rect x="0" y="0" width="280" height="36" rx="18" fill="#1E293B" stroke="#F59E0B" stroke-width="1"/>
+    <circle cx="18" cy="18" r="5" fill="#F59E0B"/>
+    <text x="32" y="23" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="600" fill="#F8FAFC" letter-spacing="1">GREATER NOIDA (W) FACILITY</text>
+
+    <!-- Main Title -->
+    <text x="0" y="90" font-family="'Space Grotesk', 'Plus Jakarta Sans', sans-serif" font-size="44" font-weight="800" fill="#FFFFFF">FACTORY TOUR &amp;</text>
+    <text x="0" y="145" font-family="'Space Grotesk', 'Plus Jakarta Sans', sans-serif" font-size="44" font-weight="800" fill="#F59E0B">PRECISION WELDING</text>
+
+    <!-- Subtitle -->
+    <text x="0" y="195" font-family="'Inter', sans-serif" font-size="18" fill="#94A3B8">12 Semi-Automatic Spout Fixing Lines In Production</text>
+    <text x="0" y="225" font-family="'Inter', sans-serif" font-size="16" fill="#64748B">0.8s Thermal Fusion • Instant Polymer Lock • 100% Zero-Leak</text>
+
+    <!-- Metric Pills -->
+    <g transform="translate(0, 260)">
+      <rect x="0" y="0" width="140" height="60" rx="8" fill="#111C44" stroke="#334155"/>
+      <text x="20" y="28" font-family="'JetBrains Mono', monospace" font-size="20" font-weight="700" fill="#38BDF8">12 UNITS</text>
+      <text x="20" y="48" font-family="'Inter', sans-serif" font-size="11" fill="#94A3B8">Semi-Auto Fleet</text>
+
+      <rect x="155" y="0" width="140" height="60" rx="8" fill="#111C44" stroke="#334155"/>
+      <text x="175" y="28" font-family="'JetBrains Mono', monospace" font-size="20" font-weight="700" fill="#F59E0B">0.8s</text>
+      <text x="175" y="48" font-family="'Inter', sans-serif" font-size="11" fill="#94A3B8">Precision Cycle</text>
+
+      <rect x="310" y="0" width="140" height="60" rx="8" fill="#111C44" stroke="#334155"/>
+      <text x="330" y="28" font-family="'JetBrains Mono', monospace" font-size="20" font-weight="700" fill="#10B981">100%</text>
+      <text x="330" y="48" font-family="'Inter', sans-serif" font-size="11" fill="#94A3B8">Leak-Proof Seal</text>
+    </g>
+  </g>
+
+  <!-- Play Button Overlay -->
+  <g transform="translate(600, 337)">
+    <circle cx="0" cy="0" r="48" fill="#F59E0B" filter="drop-shadow(0px 8px 24px rgba(245, 158, 11, 0.45))"/>
+    <polygon points="-8,-16 -8,16 16,0" fill="#0B132B"/>
+  </g>
+</svg>
