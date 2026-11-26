@@ -12,14 +12,14 @@ export default function FloatingWhatsApp() {
       
       {/* Speech Bubble Tooltip */}
       {showTooltip && (
-        <div className="hidden sm:flex items-center gap-3 px-3.5 py-2.5 rounded-2xl bg-navy-950/95 text-white border border-white/[0.12] shadow-2xl animate-bounce duration-1000 backdrop-blur-md">
+        <div className="hidden sm:flex items-center gap-3 px-3.5 py-2.5 rounded-2xl bg-white dark:bg-navy-950/95 text-slate-800 dark:text-white border border-slate-300 dark:border-white/[0.12] shadow-2xl animate-bounce duration-1000 backdrop-blur-md">
           <div className="flex flex-col">
-            <span className="text-xs font-bold text-amber-300">Need Instant Spout Pricing?</span>
-            <span className="text-[11px] text-slate-200">Chat directly with factory desk</span>
+            <span className="text-xs font-bold text-amber-700 dark:text-amber-300">Need Instant Spout Pricing?</span>
+            <span className="text-[11px] text-slate-600 dark:text-slate-200">Chat directly with factory desk</span>
           </div>
           <button
             onClick={() => setShowTooltip(false)}
-            className="text-slate-400 hover:text-white p-1 rounded-md hover:bg-white/10 transition-colors"
+            className="text-slate-400 hover:text-slate-700 dark:hover:text-white p-1 rounded-md transition-colors"
             aria-label="Close message"
           >
             <X className="w-3.5 h-3.5" />

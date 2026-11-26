@@ -125,15 +125,13 @@ export default function Footer() {
 
         {/* Bottom Sub-Footer Bar */}
         <div className="pt-8 mt-8 border-t border-white/[0.08] flex flex-col sm:flex-row items-center justify-between gap-4 text-xs font-mono text-slate-400">
-          <div>
-            &copy; {new Date().getFullYear()} BSA Packaging Industries. All Rights Reserved. Greater Noida (West), UP.
-          </div>
+         
 
           <div className="flex items-center gap-4">
-            <span className="text-slate-300">Precision Sealing • Pan-India Logistics</span>
+           
             <button
               onClick={scrollToTop}
-              className="p-2 rounded-xl bg-navy-900 hover:bg-navy-850 text-slate-300 hover:text-white border border-white/[0.1] transition-colors"
+              className="p-2 rounded-xl bg-navy-900 hover:bg-navy-850 text-slate-300 hover:text-white border border-white/[0.15] mx-10 transition-colors"
               aria-label="Scroll back to top"
             >
               <ArrowUp className="w-4 h-4 text-amber-400" />

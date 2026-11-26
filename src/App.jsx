@@ -8,6 +8,7 @@ import SpoutCatalog from './components/SpoutCatalog';
 import IndustriesPouchGrid from './components/IndustriesPouchGrid';
 import TestimonialsSection from './components/TestimonialsSection';
 import PanIndiaReach from './components/PanIndiaReach';
+import FAQSection from './components/FAQSection';
 import QuoteFormSection from './components/QuoteFormSection';
 import FloatingWhatsApp from './components/FloatingWhatsApp';
 import Footer from './components/Footer';
@@ -52,7 +53,10 @@ export default function App() {
           {/* 7. Pan-India Operational Reach & Regional Hubs */}
           <PanIndiaReach />
 
-          {/* 8. B2B Request a Quote / Sample Form + Direct Contact Information */}
+          {/* 8. B2B Procurement FAQs (Indexed by Google JSON-LD FAQPage) */}
+          <FAQSection />
+
+          {/* 9. B2B Request a Quote / Sample Form + Direct Contact Information */}
           <QuoteFormSection 
             preselectedService={preselectedService} 
             preselectedSpout={preselectedSpout} 

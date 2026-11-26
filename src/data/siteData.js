@@ -392,14 +392,46 @@ export const siteData = {
     ]
   },
 
+  faq: {
+    badge: "B2B Procurement FAQs",
+    title: "Frequently Asked Questions",
+    subtitle: "Direct answers to key procurement, technical sealing, on-site job work, and sampling questions for factory owners and brand managers.",
+    items: [
+      {
+        question: "What is the Minimum Order Quantity (MOQ) for spout fixing at BSA Packaging?",
+        answer: "For in-house batch spout fixing at our Greater Noida (West) facility, our pilot batch begins at 10,000 pouches, scaling up to monthly recurring contracts of 500,000+ pouches. For on-site factory contract job work (dispatching our technicians to your facility in Gujarat, Delhi NCR, or other states), the standard volume threshold starts at 50,000 pouches to optimize crew logistics and tooling setup."
+      },
+      {
+        question: "How does BSA Packaging's 2-step 0.8s hot press and cold press guarantee zero leakage?",
+        answer: "Manual or single-step heat sealing often leads to microscopic pinholes or warped seams during liquid transit. We use an automated 2-step cycle: Step 1 (0.8s High-Temp Hot Press) liquefies and fuses the sealant PE layer of the pouch with the spout boat under calibrated pneumatic pressure. Step 2 (Instant Cold Press Lock) immediately quenches and recrystallizes the polymer matrix, eliminating seal stress and locking the seam for 100% leak-proof reliability."
+      },
+      {
+        question: "How does Pan-India On-Site Contract Job Work operate in Gujarat and other states?",
+        answer: "BSA Packaging dispatches certified technicians, machine operators, and supervisors directly to your plant premises in industrial belts like Sanand, Ahmedabad, Surat, Rajkot, or Delhi NCR. Our crew operates with specialized portable sealing units alongside your pouch printing or filling lines. This eliminates inter-state freight transit costs, reduces turnaround lead times, and avoids scuffing or transit wear on bulk pre-printed pouches."
+      },
+      {
+        question: "What is the difference between assembled and unassembled spouts, and which should I choose?",
+        answer: "Assembled Spouts arrive with the screw cap or flip-top pre-torqued onto the spout nozzle. They are ideal if you fill pouches from the unsealed bottom or side gusset on form-fill-seal machines. Unassembled Spouts are supplied with the spout body and loose caps in separate bulk crates, specifically engineered for high-speed automated top-spout filling lines where product is injected at high speed through the open neck bore before rotary capping."
+      },
+      {
+        question: "What pouch substrates and liquid formulations are compatible with your spouts?",
+        answer: "Our 0.8s dual-action tooling seals across stand-up Doypack pouches, digital short-run laminates, plain silver/metallic foil barrier pouches, and 3-side seal refill pouches. We pack and seal for diverse liquids including acidic fruit juices, thick mayonnaise, tomato ketchups, ginger-garlic paste, foaming handwash, concentrated dishwash gels, laundry detergents, shampoos, motor coolants, and agricultural seed/chemical concentrates."
+      },
+      {
+        question: "How quickly can I receive physical sample kits or custom laminate test welds?",
+        answer: "Physical sample kits—including sample sealed pouches, standard screw-cap spouts in various mm sizes, and consumer flip-top spouts—are dispatched via express courier across India within 24 hours. Furthermore, you can ship 10–20 unsealed mockups of your printed pouch film to our Greater Noida facility for free pilot weld trials and certified hydrostatic burst pressure testing."
+      }
+    ]
+  },
+
   navigation: [
     { label: "Factory Tour", href: "#factory-tour" },
     { label: "Services", href: "#services" },
     { label: "Spout Types", href: "#spout-catalog" },
-    { label: "Sealing Tech", href: "#sealing-process" },
     { label: "Industries", href: "#industries" },
     { label: "Client Reviews", href: "#reviews" },
     { label: "Pan-India", href: "#reach" },
+    { label: "FAQ", href: "#faq" },
     { label: "Get Quote", href: "#quote" }
   ]
 };

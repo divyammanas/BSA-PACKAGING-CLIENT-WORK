@@ -1,0 +1,11 @@
+# robots.txt for BSA Packaging (https://www.bsapackaging.com)
+User-agent: *
+Allow: /
+Allow: /assets/
+Allow: /public/
+
+# Sitemaps
+Sitemap: https://www.bsapackaging.com/sitemap.xml
+
+# Crawl-delay for optimal indexing
+Crawl-delay: 1

@@ -46,13 +46,8 @@ export default function Header({ onSelectService }) {
                 <span className="font-display font-black text-xl sm:text-2xl tracking-tight text-navy-950 dark:text-white leading-tight">
                   BSA <span className="text-gradient-amber">PACKAGING</span>
                 </span>
-                <span className="hidden md:inline-flex items-center px-2 py-0.5 rounded text-[10px] font-mono font-bold bg-amber-50 dark:bg-navy-850 text-amber-800 dark:text-amber-300 border border-amber-300 dark:border-amber-500/30">
-                  GST REG
-                </span>
               </div>
-              <span className="text-[10px] sm:text-xs font-mono font-bold text-slate-500 dark:text-slate-300 tracking-wider uppercase">
-                Greater Noida (W) • Pan-India
-              </span>
+              
             </div>
           </a>
 
@@ -74,17 +69,24 @@ export default function Header({ onSelectService }) {
           {/* Header Action Buttons & Theme Switcher */}
           <div className="hidden sm:flex items-center gap-3">
             
-            {/* Theme Toggle Button (Light/Dark) */}
+            {/* Theme Toggle for Desktop / Tablet */}
             <button
+              type="button"
               onClick={toggleTheme}
-              className="p-2.5 rounded-xl border border-slate-300 dark:border-white/[0.12] bg-slate-100 dark:bg-navy-850 text-slate-800 dark:text-amber-300 hover:bg-slate-200 dark:hover:bg-navy-800 transition-all shadow-sm"
-              aria-label={isDark ? "Switch to Light Theme" : "Switch to Dark Theme"}
-              title={isDark ? "Switch to Light Theme" : "Switch to Dark Theme"}
+              className="p-2 sm:px-3 sm:py-2 rounded-xl border border-slate-300 dark:border-white/[0.12] bg-slate-100 hover:bg-slate-200 dark:bg-navy-850 dark:hover:bg-navy-800 text-slate-800 dark:text-amber-300 transition-colors flex items-center gap-1.5 text-xs font-bold shadow-sm"
+              aria-label="Toggle Light or Dark Theme"
+              title={isDark ? "Switch to Light Mode" : "Switch to Dark Mode"}
             >
               {isDark ? (
-                <Sun className="w-4 h-4 text-amber-400 stroke-[2.3]" />
+                <>
+                  <Sun className="w-4 h-4 text-amber-400" />
+                  <span className="hidden xl:inline text-slate-200">Light</span>
+                </>
               ) : (
-                <Moon className="w-4 h-4 text-slate-700 stroke-[2.3]" />
+                <>
+                  <Moon className="w-4 h-4 text-slate-700" />
+                  <span className="hidden xl:inline text-slate-700">Dark</span>
+                </>
               )}
             </button>
 

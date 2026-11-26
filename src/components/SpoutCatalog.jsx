@@ -225,26 +225,29 @@ export default function SpoutCatalog({ onSelectSpout }) {
             </div>
 
             {/* Interactive Toggle Switch */}
-            <div className="flex items-center p-1.5 rounded-2xl bg-slate-100 dark:bg-navy-900 border border-slate-300 dark:border-white/[0.12] self-start md:self-auto shadow-sm">
+            <div className="flex items-center p-1.5 rounded-2xl bg-slate-100 dark:bg-navy-900 border border-slate-300 dark:border-white/[0.12] self-stretch sm:self-start md:self-auto shadow-sm max-w-full overflow-x-auto">
               <button
+                type="button"
                 onClick={() => setActiveConfigTab('both')}
-                className={`px-3.5 py-2 rounded-xl text-xs font-mono font-bold transition-all ${
+                className={`shrink-0 px-3.5 py-2 rounded-xl text-xs font-mono font-bold transition-all ${
                   activeConfigTab === 'both' ? 'btn-amber-glow' : 'text-slate-700 dark:text-slate-300 hover:text-navy-950 dark:hover:text-white'
                 }`}
               >
                 Compare Both
               </button>
               <button
+                type="button"
                 onClick={() => setActiveConfigTab('assembled')}
-                className={`px-3.5 py-2 rounded-xl text-xs font-mono font-bold transition-all ${
+                className={`shrink-0 px-3.5 py-2 rounded-xl text-xs font-mono font-bold transition-all ${
                   activeConfigTab === 'assembled' ? 'btn-amber-glow' : 'text-slate-700 dark:text-slate-300 hover:text-navy-950 dark:hover:text-white'
                 }`}
               >
                 Assembled Only
               </button>
               <button
+                type="button"
                 onClick={() => setActiveConfigTab('unassembled')}
-                className={`px-3.5 py-2 rounded-xl text-xs font-mono font-bold transition-all ${
+                className={`shrink-0 px-3.5 py-2 rounded-xl text-xs font-mono font-bold transition-all ${
                   activeConfigTab === 'unassembled' ? 'btn-amber-glow' : 'text-slate-700 dark:text-slate-300 hover:text-navy-950 dark:hover:text-white'
                 }`}
               >
