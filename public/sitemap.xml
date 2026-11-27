@@ -7,6 +7,11 @@
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <image:image>
+      <image:loc>https://www.bsapackaging.com/assets/bsa-logo.png</image:loc>
+      <image:title>BSA Packaging Official Logo</image:title>
+      <image:caption>BSA Packaging flexible packaging and spout fixing specialist</image:caption>
+    </image:image>
+    <image:image>
       <image:loc>https://www.bsapackaging.com/assets/bsa-factory-poster.svg</image:loc>
       <image:title>BSA Packaging Factory Floor and 12 Semi-Automatic Spout Fixing Machines</image:title>
       <image:caption>Operational spout fixing lines in Greater Noida (West) facility</image:caption>

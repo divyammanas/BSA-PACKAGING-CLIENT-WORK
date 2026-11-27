@@ -1,71 +1,65 @@
 import React, { useState } from 'react';
-import { HelpCircle, ChevronDown, ChevronUp, MessageSquare, ArrowRight } from 'lucide-react';
+import { ChevronDown, MessageSquare, ArrowRight } from 'lucide-react';
 import { siteData } from '../data/siteData';
 
 export default function FAQSection() {
-  const [openIndex, setOpenIndex] = useState(0); // First item open by default
+  const [openIndex, setOpenIndex] = useState(0);
   const faq = siteData.faq;
 
   const toggleAccordion = (idx) => {
-    setOpenIndex(prev => (prev === idx ? -1 : idx));
+    setOpenIndex((prev) => (prev === idx ? -1 : idx));
   };
 
-  const whatsappUrl = `https://wa.me/${siteData.company.contact.whatsappNumber}?text=${encodeURIComponent('Hi BSA Packaging team, I have a question regarding spout fixing and job work services.')}`;
+  const whatsappUrl = `https://wa.me/${siteData.company.contact.whatsappNumber}?text=${encodeURIComponent('Hello BSA Packaging team, I have a question regarding spout fixing and job work services.')}`;
 
   return (
-    <section id="faq" className="py-20 md:py-28 bg-[#F8FAFC] dark:bg-[#060B18] text-slate-800 dark:text-white relative overflow-hidden transition-colors duration-200">
-      {/* Background Blueprint Grid */}
-      <div className="absolute inset-0 bg-grid-pattern opacity-40 pointer-events-none" />
+    <section id="faq" className="py-16 md:py-24 bg-[#F8FAFC] dark:bg-[#11192E] border-b border-slate-200 dark:border-slate-800 transition-colors duration-200">
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
 
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        
         {/* Section Header */}
-        <div className="text-center max-w-3xl mx-auto mb-16">
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white dark:bg-navy-850 border border-slate-300 dark:border-white/[0.1] text-slate-800 dark:text-amber-300 text-xs font-mono font-bold tracking-wider uppercase mb-3.5 shadow-sm">
-            <HelpCircle className="w-4 h-4 text-amber-500" />
-            <span>{faq.badge}</span>
-          </div>
-          <h2 className="font-display text-2xl sm:text-4xl lg:text-5xl font-black text-navy-950 dark:text-white tracking-tight leading-tight">
+        <div className="text-center max-w-2xl mx-auto mb-12">
+          <span className="text-xs font-mono uppercase tracking-wider font-semibold text-[#1870B0] dark:text-sky-400 block mb-2">
+            {faq.badge}
+          </span>
+          <h2 className="font-display text-2xl sm:text-4xl font-bold text-[#182850] dark:text-white tracking-tight">
             {faq.title}
           </h2>
-          <p className="mt-4 text-slate-600 dark:text-slate-200 text-base sm:text-lg leading-relaxed font-normal">
+          <p className="mt-3 text-sm sm:text-base text-slate-600 dark:text-slate-300 leading-relaxed">
             {faq.subtitle}
           </p>
         </div>
 
-        {/* Accordion Items List */}
-        <div className="space-y-4">
+        {/* Accordion List */}
+        <div className="space-y-3">
           {faq.items.map((item, idx) => {
             const isOpen = openIndex === idx;
             return (
               <div
                 key={idx}
-                className={`rounded-2xl border transition-all duration-200 overflow-hidden ${
+                className={`rounded-xl border transition-colors ${
                   isOpen
-                    ? 'bg-white dark:bg-navy-900 border-amber-400 dark:border-amber-500/80 shadow-lg'
-                    : 'bg-white/80 dark:bg-navy-900/60 border-slate-200 dark:border-white/[0.08] hover:border-slate-300 dark:hover:border-white/[0.15] shadow-sm'
+                    ? 'bg-white dark:bg-slate-900 border-[#1870B0]/40 dark:border-sky-500/40 shadow-sm'
+                    : 'bg-white dark:bg-slate-900 border-slate-200 dark:border-slate-800 hover:border-slate-300 dark:hover:border-slate-700'
                 }`}
               >
                 <button
                   type="button"
                   onClick={() => toggleAccordion(idx)}
-                  className="w-full py-5 px-6 sm:px-7 flex items-center justify-between gap-4 text-left focus:outline-none focus:ring-2 focus:ring-amber-500/50"
+                  className="w-full py-4 px-5 sm:px-6 flex items-center justify-between gap-4 text-left focus:outline-none focus:ring-2 focus:ring-[#1870B0]/40 rounded-xl"
                   aria-expanded={isOpen}
                 >
-                  <span className="font-display text-base sm:text-lg font-bold text-navy-950 dark:text-white leading-snug">
+                  <span className="font-display text-sm sm:text-base font-semibold text-[#182850] dark:text-white leading-snug">
                     {item.question}
                   </span>
-                  <div className={`w-8 h-8 rounded-full flex items-center justify-center shrink-0 transition-transform duration-200 ${
-                    isOpen 
-                      ? 'bg-amber-500 text-navy-950 rotate-180' 
-                      : 'bg-slate-100 dark:bg-navy-850 text-slate-600 dark:text-slate-300'
-                  }`}>
-                    <ChevronDown className="w-4 h-4 stroke-[2.5]" />
-                  </div>
+                  <ChevronDown
+                    className={`w-4 h-4 text-slate-500 dark:text-slate-400 shrink-0 transition-transform duration-200 ${
+                      isOpen ? 'rotate-180 text-[#1870B0] dark:text-sky-400' : ''
+                    }`}
+                  />
                 </button>
 
                 {isOpen && (
-                  <div className="px-6 sm:px-7 pb-6 pt-1 text-xs sm:text-sm text-slate-700 dark:text-slate-200 leading-relaxed border-t border-slate-100 dark:border-white/[0.06] font-normal animate-in fade-in duration-200">
+                  <div className="px-5 sm:px-6 pb-5 pt-2 text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed border-t border-slate-100 dark:border-slate-800">
                     <p>{item.answer}</p>
                   </div>
                 )}
@@ -74,24 +68,22 @@ export default function FAQSection() {
           })}
         </div>
 
-        {/* FAQ Bottom WhatsApp Callout */}
-        <div className="mt-12 p-6 rounded-2xl bg-white dark:bg-navy-900/90 border border-slate-200 dark:border-white/[0.1] shadow-md flex flex-col sm:flex-row items-center justify-between gap-4">
-          <div className="flex items-center gap-3.5">
-            <div className="w-10 h-10 rounded-xl bg-emerald-50 dark:bg-emerald-500/15 border border-emerald-300 dark:border-emerald-500/30 flex items-center justify-center shrink-0">
-              <MessageSquare className="w-5 h-5 text-emerald-600 dark:text-emerald-400" />
-            </div>
-            <p className="text-xs sm:text-sm text-slate-700 dark:text-slate-200 font-medium">
-              Have a custom pouch geometry, barrier film, or volume question?
+        {/* Quiet WhatsApp Callout */}
+        <div className="mt-10 p-5 rounded-xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 flex flex-col sm:flex-row items-center justify-between gap-4">
+          <div className="flex items-center gap-3 text-center sm:text-left">
+            <MessageSquare className="w-5 h-5 text-emerald-600 dark:text-emerald-400 shrink-0 hidden sm:block" />
+            <p className="text-xs sm:text-sm text-slate-600 dark:text-slate-300">
+              Have a specific pouch laminate, spout neck diameter, or scheduling question?
             </p>
           </div>
           <a
             href={whatsappUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="shrink-0 px-5 py-2.5 rounded-xl text-xs font-bold bg-emerald-600 hover:bg-emerald-500 text-white transition-colors shadow-sm flex items-center gap-2"
+            className="shrink-0 px-4 py-2.5 rounded-lg text-xs font-semibold bg-emerald-600 hover:bg-emerald-700 text-white transition-colors inline-flex items-center gap-1.5"
           >
-            <span>Ask Us on WhatsApp</span>
-            <ArrowRight className="w-4 h-4" />
+            <span>Ask on WhatsApp</span>
+            <ArrowRight className="w-3.5 h-3.5" />
           </a>
         </div>
 

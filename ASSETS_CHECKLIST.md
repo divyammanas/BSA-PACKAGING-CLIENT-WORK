@@ -10,7 +10,7 @@ All components in the website automatically read these paths from `src/data/site
 
 | Target File Path | Description | Recommended Format | Recommended Dimensions | Notes |
 | :--- | :--- | :--- | :--- | :--- |
-| `/public/assets/bsa-logo.svg` (or `.png`) | Primary Company Logo (Dark Background) | SVG (Vector) or PNG with transparent background | 500 × 140 px | High contrast; appears in the sticky navigation header and footer. |
+| `/public/assets/bsa-logo.png` | Primary Company Logo (Official Brand Mark) | PNG (Transparent) | 605 × 436 px | Installed from official brand logo; appears in the sticky navigation header and footer. |
 | `/public/assets/bsa-packaging-og.png` | Social Sharing & WhatsApp Preview Card | PNG / WebP | 1200 × 630 px (1.91:1 ratio) | Used for Open Graph meta tags when sharing the link on WhatsApp, LinkedIn, or iMessage. |
 | `/public/favicon.svg` | Browser Tab Icon (Favicon) | SVG / ICO / PNG | 64 × 64 px | Already pre-configured with the BSA Packaging spout mark. |
 

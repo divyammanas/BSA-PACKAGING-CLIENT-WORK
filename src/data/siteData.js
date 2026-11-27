@@ -1,371 +1,374 @@
 /**
  * BSA Packaging — Centralized Business Data & Configuration
- * 
- * Edit this single file to update all copy, contact numbers, technical specs,
- * media paths, client reviews, and form options without touching UI components.
+ *
+ * Edit this single file to update copy, contact numbers, technical specs,
+ * media paths, client reviews, and form options without modifying components.
  */
 
 export const siteData = {
   company: {
     name: "BSA Packaging",
-    legalName: "BSA Packaging Industries",
+    legalName: "BSA Packaging",
     badge: "GST Registered B2B Flexible Packaging Specialist",
     gstin: "09AAACB1234D1Z5",
     headquarters: "Greater Noida (West), Uttar Pradesh",
     serviceAreas: "Delhi NCR • Gujarat • Pan-India",
     address: {
-      facility: "Unit 12, Sector 1, Industrial Area",
-      area: "Greater Noida (West), Gautam Buddha Nagar",
-      state: "Uttar Pradesh - 201306",
+      facility: "Khasra no 832, Greater Noida W Rd",
+      area: "Khera Choganpur, Chauganpur, Knowledge Park V, Bisrakh Jalalpur",
+      state: "Greater Noida, Uttar Pradesh 201306",
+      full: "Khasra no 832, Greater Noida W Rd, Khera Choganpur, Chauganpur, Knowledge Park V, Bisrakh Jalalpur, Greater Noida, Uttar Pradesh 201306",
       country: "India",
-      googleMapsUrl: "https://maps.google.com/?q=Greater+Noida+West+Uttar+Pradesh"
+      googleMapsUrl: "https://maps.app.goo.gl/JaiadmsL8spYnFdc6",
+      coordinates: {
+        lat: 28.5509,
+        lng: 77.4594
+      }
     },
     contact: {
-      phone: "+91 98710 88234",
-      phoneRaw: "+919871088234",
-      whatsappNumber: "919871088234",
-      whatsappFormatted: "+91 98710 88234",
+      phone: "+91 98682 26908",
+      phoneRaw: "+919868226908",
+      whatsappNumber: "919868226908",
+      whatsappFormatted: "+91 98682 26908",
       whatsappDefaultText: "Hello BSA Packaging, I am inquiring about spout fixing services and spout supplies for flexible pouches. Please share quotation and sample details.",
       email: "inquiry@bsapackaging.com",
       salesEmail: "sales@bsapackaging.com",
-      workingHours: "Mon - Sat: 9:00 AM - 7:00 PM IST"
+      workingHours: "Mon – Sat: 9:00 AM – 7:00 PM IST"
     },
-    web3FormsKey: "YOUR_WEB3FORMS_ACCESS_KEY_HERE" // Replace with real key or leave empty for instant WhatsApp fallback
+    web3FormsKey: "YOUR_WEB3FORMS_ACCESS_KEY_HERE"
   },
 
   hero: {
-    preBadge: "B2B Flexible Packaging & Spout Fixing Specialist",
-    title: "Precision Spout Fixing, Custom Spout Supply & Pan-India On-Site Job Work",
-    subtitle: "We heat-seal imported spouts onto your pre-made flexible pouches using our fleet of 12 semi-automatic machines in Greater Noida (West) — or dispatch skilled on-site fixing crews directly to your factories across Delhi NCR, Gujarat, and Pan-India.",
+    preBadge: "Flexible Packaging & Spout Fixing Specialist",
+    title: "Precision Spout Fixing, Custom Spout Supply & Pan-India Job Work",
+    subtitle: "We heat-seal imported food-grade spouts onto your pre-made laminated pouches using 12 semi-automatic machines in Greater Noida (West) — or deploy trained fixing crews directly to your factories across Delhi NCR, Gujarat, and Pan-India.",
     trustStrip: [
-      { label: "GST Registered", subtext: "Govt. Compliant B2B Enterprise", highlight: "Verified" },
-      { label: "12 Semi-Auto Machines", subtext: "High-Volume Greater Noida Facility", highlight: "In-House Fleet" },
-      { label: "0.8s Precision Sealing", subtext: "2-Step Hot Press & Instant Cold Lock", highlight: "Zero-Leak" },
-      { label: "Delhi NCR • Gujarat • Pan-India", subtext: "In-House Sealing + On-Premise Crews", highlight: "Pan-India Reach" }
+      { label: "GST Registered", subtext: "Compliant B2B Enterprise", highlight: "Verified" },
+      { label: "12 Semi-Auto Machines", subtext: "Greater Noida (W) Facility", highlight: "In-House Fleet" },
+      { label: "0.8s Precision Sealing", subtext: "Hot Press & Cold Lock", highlight: "Leak-Proof" },
+      { label: "Delhi NCR • Gujarat • Pan-India", subtext: "In-House + On-Site Crews", highlight: "Pan-India Reach" }
     ],
-    ctaPrimary: "Request Bulk Quote & Samples",
+    ctaPrimary: "Request Bulk Quote",
     ctaSecondary: "Watch Factory Tour",
-    ctaWhatsApp: "Quick Chat on WhatsApp"
+    ctaWhatsApp: "WhatsApp Us"
   },
 
   factoryShowcase: {
-    badge: "Operational Manufacturing Tour",
-    title: "Inside Our Greater Noida (West) Spout Fixing Facility",
-    description: "Watch our 12 semi-automatic spout fixing lines in action. Experience how our calibrated 0.8-second thermal press combined with instant cold locking creates airtight, 100% leak-proof welds on flexible pouches for India's leading FMCG and chemical brands.",
+    badge: "Manufacturing Facility",
+    title: "Inside Our Greater Noida (West) Spout Fixing Unit",
+    description: "View our 12 semi-automatic spout fixing machines in operation. Our calibrated 0.8-second hot press paired with an instant cold press lock produces consistent, leak-proof welds on flexible pouches for FMCG and industrial brands.",
     video: {
       videoUrl: "/assets/bsa-factory-tour.mp4",
       posterUrl: "/assets/bsa-factory-poster.jpg",
-      badgeText: "Factory Floor Live Demo",
-      duration: "0:45 HD Showcase",
-      caption: "Live footage of 12 semi-automatic pneumatic spout sealing machines running production batches."
+      badgeText: "Factory Floor Tour",
+      duration: "0:45 Showcase",
+      caption: "Footage of our 12 semi-automatic pneumatic spout sealing machines handling production batches."
     },
     metrics: [
-      { value: "12", label: "Semi-Auto Machines", desc: "Installed & operational in Greater Noida West" },
-      { value: "0.8s", label: "Hot Press Time", desc: "Calibrated micro-second thermal fusion" },
-      { value: "100%", label: "Leak-Proof Seal", desc: "Hydrostatic burst & pressure tested" },
-      { value: "500K+", label: "Pouches / Month", desc: "Scalable monthly contract capacity" }
+      { value: "12", label: "Semi-Auto Machines", desc: "Operational in Greater Noida (W)" },
+      { value: "0.8s", label: "Hot Press Cycle", desc: "Calibrated thermal fusion" },
+      { value: "100%", label: "Leak-Tested Seams", desc: "Hydrostatic pressure checked" },
+      { value: "500K+", label: "Monthly Capacity", desc: "Scalable contract throughput" }
     ],
     sealingSteps: [
       {
         step: "01",
         title: "High-Temp Hot Press",
         time: "0.8 Seconds",
-        desc: "Precisely calibrated heated brass jaws press the pouch barrier laminate and imported spout boat together at uniform heat, liquefying the sealant PE layer for complete molecular bonding.",
+        desc: "Calibrated heated jaws press the pouch sealant layer and imported spout boat together under uniform pressure for 0.8 seconds, achieving full thermal fusion.",
         badge: "Thermal Fusion"
       },
       {
         step: "02",
         title: "Instant Cold Press Lock",
         time: "Immediate Quench",
-        desc: "The pouch joint is immediately gripped by chilled pneumatic jaws. This rapid quench recrystallizes the polymer matrix, eliminating microscopic pinholes, edge wrinkles, and seal stress.",
+        desc: "The welded joint is immediately gripped by chilled pneumatic jaws to set and stabilize the polymer seam, preventing pinholes, edge wrinkles, and warping.",
         badge: "Polymer Lock"
       },
       {
         step: "03",
-        title: "Zero-Leak Structural Finish",
+        title: "Leak-Proof Structural Finish",
         time: "Batch Inspected",
-        desc: "The resulting seam withstands vigorous drop impacts, high liquid viscosity, acidic citrus juices, surfactants, and long transit vibrations without micro-leaks.",
-        badge: "100% Tested"
+        desc: "Each batch is checked to withstand drop impacts, viscous pastes, acidic beverages, surfactants, and long-haul transit without seam failure.",
+        badge: "Quality Checked"
       }
     ]
   },
 
   businessPillars: {
-    badge: "Two Flexible Engagement Models",
-    title: "How We Deliver Packaging Precision to Your Business",
-    subtitle: "Whether you need high-volume automated batch fixing at our dedicated facility or need our certified technicians inside your own plant, BSA Packaging has you covered.",
+    badge: "Service Models",
+    title: "Two Flexible Ways We Work With Your Plant",
+    subtitle: "Send your pouches to our Greater Noida (West) unit for end-to-end spout supply and sealing, or bring our trained technicians directly onto your factory floor.",
     pillars: [
       {
         id: "in-house",
-        tag: "Core Pillar 01",
-        title: "In-House Spout Fixing & Spout Trading",
-        subtitle: "Greater Noida (West) Central Hub",
-        badge: "Zero Machine Capex for Brands",
-        desc: "Send your pre-printed, pre-laminated pouches to our Greater Noida (West) facility. We supply high-grade imported spouts and seal them on our 12 semi-automatic machines before carefully packing and dispatching back to your filling lines.",
+        tag: "Service 01",
+        title: "In-House Spout Fixing & Spout Supply",
+        subtitle: "Greater Noida (West) Facility",
+        badge: "Zero Machine Capex",
+        desc: "Send your pre-printed, laminated pouches to our Knowledge Park V facility in Greater Noida (West). We supply imported spouts in your required neck diameter, seal them across our 12 semi-automatic machines, and dispatch finished pouches ready for filling.",
         workflow: [
-          { step: "1", title: "Ship Empty Pouches", desc: "Client sends pre-made printed/laminated pouches to our Greater Noida facility." },
-          { step: "2", title: "Imported Spout Supply", desc: "We provide high-grade imported spouts in the exact mm neck diameter requested." },
-          { step: "3", title: "0.8s Hot/Cold Press", desc: "Sealed on 12 semi-auto machines under controlled 2-step thermal pressure." },
-          { step: "4", title: "Dispatch for Filling", desc: "Quality-checked, dust-free boxed pouches shipped back ready for filling." }
+          { step: "1", title: "Send Empty Pouches", desc: "Dispatch pre-made printed or plain pouches to our Greater Noida facility." },
+          { step: "2", title: "Imported Spout Supply", desc: "We supply virgin food-grade spouts in your specified mm diameter." },
+          { step: "3", title: "0.8s Hot & Cold Press", desc: "Sealed on our 12 semi-automatic machines using a 2-step thermal weld." },
+          { step: "4", title: "Dispatch for Filling", desc: "Quality-inspected pouches packed neatly in cartons and returned for filling." }
         ],
         highlights: [
-          "Eliminate machinery capital expenditure and maintenance overhead",
-          "Uniform seal quality backed by 12 dedicated machines",
-          "Dust-free, food-grade sanitary handling protocols",
-          "Rapid turnaround times with express transit across North India"
+          "Avoid machinery capital expenditure and maintenance overhead",
+          "Consistent weld strength across 12 dedicated sealing lines",
+          "Clean, organized batch handling for food and homecare products",
+          "Dependable turnaround times across Delhi NCR and North India"
         ],
-        ctaText: "Inquire for In-House Fixing",
-        accentColor: "blue"
+        ctaText: "Inquire for In-House Fixing"
       },
       {
         id: "on-site",
-        tag: "Core Pillar 02",
+        tag: "Service 02",
         title: "Pan-India On-Site Contract Job Work",
-        subtitle: "We Bring the Workforce & Machines to Your Factory",
-        badge: "Zero Transit Risk on High Volumes",
-        desc: "For clients with massive pouch volumes or tight production deadlines, we dispatch our trained spout-fixing technicians and supervisors directly to your premises anywhere across Delhi NCR, Gujarat, and Pan-India.",
+        subtitle: "Trained Technicians at Your Premises",
+        badge: "Zero Transit Damage",
+        desc: "For high-volume runs or tight production schedules, BSA Packaging dispatches experienced spout-fixing technicians and supervisors directly to your plant across Delhi NCR, Gujarat, and other Indian industrial hubs.",
         workflow: [
-          { step: "1", title: "Requirement & Scheduling", desc: "Specify your batch volume, pouch profile, and plant location." },
-          { step: "2", title: "Crew & Tool Mobilization", desc: "BSA Packaging dispatches certified technicians and portable tooling to your site." },
-          { step: "3", title: "On-Premise Sealing", desc: "Our team operates inside your facility alongside your pouch printing/filling lines." },
-          { step: "4", title: "Direct Inline Filling", desc: "Pouches move straight from spout fixing into filling without inter-state freight." }
+          { step: "1", title: "Volume & Schedule", desc: "Confirm pouch volume, spout specification, and factory location." },
+          { step: "2", title: "Team Mobilization", desc: "We dispatch trained operators and sealing tooling directly to your plant." },
+          { step: "3", title: "On-Premise Fixing", desc: "Our team works inside your facility alongside your converting or filling lines." },
+          { step: "4", title: "Direct Inline Filling", desc: "Sealed pouches move straight to filling without interstate back-and-forth freight." }
         ],
         highlights: [
-          "Zero inter-state freight transit costs and zero pouch scuffing or damage",
-          "Flexible crew sizing (2 to 15+ technicians based on daily volume target)",
-          "Active operational presence in Gujarat industrial corridors & Delhi NCR",
-          "On-site supervisor with batch QC test logs"
+          "Eliminates two-way interstate freight costs and transit scuffing",
+          "Scalable technician teams sized to match your daily production targets",
+          "Regular on-site operations across Gujarat (Sanand, Ahmedabad, Surat, Rajkot) & NCR",
+          "Dedicated floor supervision with periodic leak-test checks"
         ],
-        ctaText: "Book On-Site Team",
-        accentColor: "amber"
+        ctaText: "Request On-Site Job Work"
       }
     ]
   },
 
   spoutCatalog: {
-    badge: "Technical Spout Inventory",
-    title: "Premium Spout Formats & Supply Configurations",
-    subtitle: "Imported food-grade polypropylene and polyethylene spouts engineered for high heat resistance, liquid barrier performance, and seamless capping operations.",
+    badge: "Product Range",
+    title: "Spout Formats & Supply Configurations",
+    subtitle: "Imported virgin polypropylene and polyethylene spouts engineered for reliable thermal welding, chemical resistance, and clean consumer dispensing.",
     types: [
       {
         id: "screw-cap",
         name: "Standard Screw-Cap Spouts",
-        tag: "Industrial Benchmark",
+        tag: "Standard Industrial",
         highlight: "Tamper-Evident & High Seal Integrity",
-        description: "Proven multi-thread screw closures engineered with a break-away tamper-evident ring and precision bore plug. Ideal for high-viscosity liquids, sauces, oils, and chemical refills.",
+        description: "Multi-thread screw closures fitted with a break-away tamper-evident ring and tight bore seal. Widely used for sauces, viscous pastes, fruit juices, detergents, and agro-chemical packs.",
         specs: [
           { label: "Neck Diameters", value: "8.5mm, 10mm, 15mm, 16mm, 20mm, 22mm, 28mm" },
-          { label: "Material Grade", value: "100% Virgin Food-Grade HDPE / PP" },
-          { label: "Cap Style", value: "Ribbed Grip Screw Cap with Tamper Ring" },
-          { label: "Color Options", value: "Natural, White, Red, Blue, Yellow, Custom Pantone" },
-          { label: "Weld Compatibility", value: "PET/PE, PET/AL/PE, Kraft/PE, BOPP Laminates" }
+          { label: "Material Grade", value: "Virgin Food-Grade HDPE / PP" },
+          { label: "Cap Design", value: "Ribbed Screw Cap with Tamper-Evident Ring" },
+          { label: "Color Options", value: "Natural, White, Red, Blue, Yellow, Custom Colors" },
+          { label: "Film Compatibility", value: "PET/PE, PET/AL/PE, Kraft/PE, BOPP Laminates" }
         ],
-        applications: ["Ketchups & Condiments", "Dishwash & Detergents", "Fruit Pulp & Juices", "Edible Oil & Ghee", "Agro Seed Packs"]
+        applications: ["Ketchups & Sauces", "Dishwash & Detergents", "Juices & Pulps", "Edible Oil", "Seeds & Agro Packs"]
       },
       {
         id: "flip-top",
-        name: "Flip-Top Spouts (Featured Innovation)",
-        tag: "Consumer Convenience Upgrade",
-        highlight: "No Lost Caps • Chaayos-Style Experience",
-        featuredBadge: "Solves #1 Consumer Complaint",
-        description: "Introduced specifically to solve the biggest frustration in flexible pouch consumption: lost loose caps! Inspired by modern ready-to-drink formats (like Chaayos beverage pouches), this one-piece tethered flip-top allows easy one-handed drinking/pouring and snaps shut securely with an audible click.",
+        name: "Flip-Top Spouts",
+        tag: "Anti-Loss Convenience",
+        highlight: "No Lost Caps • Chaayos-Style Design",
+        featuredBadge: "Solves Loose Cap Loss",
+        description: "Designed specifically to eliminate a common consumer complaint with liquid pouches: losing small loose screw caps. Similar to modern ready-to-drink beverage pouches (such as Chaayos), the tethered hinged cap stays attached to the nozzle and snaps shut securely.",
         specs: [
           { label: "Neck Diameters", value: "10mm, 15mm, 18mm" },
-          { label: "Material Grade", value: "High-Flex Living Hinge Polypropylene" },
-          { label: "Cap Style", value: "Hinged Flip-Top with Audible Snap-Lock Seal" },
-          { label: "Key Benefit", value: "Cap stays permanently attached to spout boat" },
-          { label: "Consumer Appeal", value: "On-the-go consumption, zero loose litter" }
+          { label: "Material Grade", value: "Flexible Living-Hinge Polypropylene (PP)" },
+          { label: "Cap Design", value: "One-Piece Tethered Flip-Top with Snap Seal" },
+          { label: "Key Advantage", value: "Cap stays attached — zero misplaced caps" },
+          { label: "Best Suited For", value: "On-the-go beverages, condiments, travel packs" }
         ],
-        applications: ["Ready-to-Drink Chai & Coffee", "Juices & Energy Drinks", "Mayonnaise Squeeze Pouches", "Hand Sanitizers & Liquid Soap", "Travel-Friendly Condiments"]
+        applications: ["RTD Chai & Coffee", "Juices & Beverages", "Mayonnaise Pouches", "Handwash & Sanitizers", "Condiments"]
       }
     ],
     configurations: [
       {
         id: "assembled",
         name: "Assembled Spouts",
-        subtext: "Cap Pre-Attached to Spout Nozzle",
-        recommendedFor: "Bottom-Fill or Corner-Slit Packaging Lines",
-        desc: "The spout comes complete with the screw-cap or flip-top tightly fitted onto the nozzle boat. When heat-sealed to the pouch corner or top, the pouch is supplied capped.",
-        howItWorks: "The brand fills the pouch through the unsealed bottom or side gusset on automated form-fill-seal machines, then heat-seals the bottom edge closed.",
+        subtext: "Cap or Flip-Top Pre-Attached to Nozzle",
+        recommendedFor: "Bottom-Fill or Side-Gusset Filling Lines",
+        desc: "Supplied with the screw cap or flip-top already fitted onto the spout body. Once welded to the pouch, your team fills from the open bottom or side seam and seals it shut.",
+        howItWorks: "Your filling line fills through the unsealed bottom edge, then completes a standard straight heat seal.",
         advantages: [
-          "Zero capping machinery needed on your filling line",
-          "Pouch arrives completely sealed against airborne dust",
-          "Fastest lead-time for manual or semi-automatic bottom filling"
+          "No separate rotary capping machine required on your floor",
+          "Pouch interior stays protected from dust during transit",
+          "Straightforward workflow for semi-automatic and manual bottom filling"
         ],
-        badge: "Most Popular for Food & Beverages"
+        badge: "For Bottom-Fill Workflows"
       },
       {
         id: "unassembled",
         name: "Unassembled Spouts",
-        subtext: "Spout Bodies & Caps Supplied Separately",
-        recommendedFor: "Top-Spout Liquid Filling & Capping Lines",
-        desc: "The spout boat/nozzle is heat-sealed to the pouch top with the neck left open. Caps are supplied in separate bulk boxes for your automatic capping machine.",
-        howItWorks: "Liquid is injected at high speed directly through the open spout bore, after which your automatic rotary capper torque-tightens the caps.",
+        subtext: "Nozzle Bodies & Caps Supplied Separately",
+        recommendedFor: "Automated Top-Spout Filling & Capping Lines",
+        desc: "The spout nozzle is heat-sealed into the pouch with the bore left open, while matching caps or flip-tops are delivered separately in bulk cartons for your capping machine.",
+        howItWorks: "Liquid is dosed directly through the open spout neck at speed before your automatic capper applies and torques the cap.",
         advantages: [
-          "Allows high-velocity laminar liquid filling through wide neck bore",
-          "Essential for high-speed continuous industrial filling lines",
-          "Optimal for viscous paste and sauce filling machines"
+          "Supports high-speed automated top-fill liquid dosing",
+          "Ideal for thick pastes, sauces, and high-throughput lines",
+          "Clean integration with rotary capping heads"
         ],
-        badge: "Engineered for High-Speed Automation"
+        badge: "For Top-Spout Filling Lines"
       }
     ]
   },
 
   industries: {
-    badge: "Applications & Substrates",
-    title: "Compatible Pouch Formats & Product Categories",
-    subtitle: "Our 0.8s dual-action thermal tooling seals flawlessly across diverse polymer compositions, foil barriers, and liquid formulations.",
+    badge: "Applications",
+    title: "Compatible Pouches & Industries We Serve",
+    subtitle: "Our 2-step thermal and cold press tooling accommodates standard laminated structures, digital short runs, and metallic barrier films across food, homecare, and industrial segments.",
     categories: [
-      { name: "Juices & Beverages", icon: "CupSoda", desc: "Fruit pulps, RTD teas, coconut water, energy drinks" },
-      { name: "Mayonnaise & Sauces", icon: "Utensils", desc: "Thick mayonnaise, culinary sauces, burger dressings" },
-      { name: "Ketchups & Pastes", icon: "Flame", desc: "Tomato ketchup, ginger-garlic paste, Schezwan chutney" },
-      { name: "Handwash & Soap", icon: "Sparkles", desc: "Foaming handwash, liquid soaps, sanitizer refills" },
-      { name: "Dishwash & Cleaners", icon: "Droplets", desc: "Concentrated dishwash gels, floor cleansers, glass wash" },
-      { name: "Liquid Detergents", icon: "Shirt", desc: "Fabric care liquids, wool conditioners, laundry booster" },
-      { name: "Personal Care", icon: "Smile", desc: "Shampoos, conditioners, body lotions, hair oils" },
-      { name: "Household Chemicals", icon: "ShieldAlert", desc: "Automotive coolants, battery water, adhesives, thinners" },
-      { name: "Agro Chemicals & Seeds", icon: "Sprout", desc: "Liquid fertilizers, pesticide concentrates, hybrid seeds" }
+      { name: "Juices & Beverages", icon: "CupSoda", desc: "Fruit pulps, RTD tea/coffee, energy drinks, coconut water" },
+      { name: "Mayonnaise & Sauces", icon: "Utensils", desc: "Mayonnaise, culinary dressings, marinades, dips" },
+      { name: "Ketchups & Pastes", icon: "Flame", desc: "Tomato ketchup, ginger-garlic paste, culinary purees" },
+      { name: "Handwash & Soaps", icon: "Sparkles", desc: "Liquid handwash, soap refills, sanitizers" },
+      { name: "Dishwash & Cleaners", icon: "Droplets", desc: "Dishwash gels, surface cleaners, glass cleaners" },
+      { name: "Liquid Detergents", icon: "Shirt", desc: "Laundry detergents, fabric conditioners, liquid wash" },
+      { name: "Personal Care", icon: "Smile", desc: "Shampoos, lotions, hair oils, body wash refills" },
+      { name: "Household Chemicals", icon: "ShieldAlert", desc: "Automotive coolants, distilled water, adhesives" },
+      { name: "Agro Chemicals & Seeds", icon: "Sprout", desc: "Liquid bio-fertilizers, agri-concentrates, hybrid seeds" }
     ],
     pouchFormats: [
       {
         name: "Stand-Up Liquid Pouches (Doypack)",
-        desc: "Bottom-gusseted pouches offering high shelf visibility and stability for consumer retail.",
+        desc: "Bottom-gusseted retail pouches designed for stable shelf display.",
         badge: "Standard & Shaped"
       },
       {
         name: "Digital Laminated Pouches",
-        desc: "Short-run and high-definition printed barrier films without cylinder printing costs.",
-        badge: "High-Definition Print"
+        desc: "Short-run and multi-SKU digital printed barrier films.",
+        badge: "Short-Run Ready"
       },
       {
-        name: "Plain Silver & Metallic Barrier Pouches",
-        desc: "High oxygen and moisture barrier foil laminates designed for institutional and chemical supplies.",
-        badge: "Max Barrier"
+        name: "Plain Silver & Metallic Pouches",
+        desc: "High-barrier aluminum foil laminates for industrial & institutional refills.",
+        badge: "High Barrier"
       },
       {
-        name: "3-Side Seal & Side-Gusset Pouches",
-        desc: "Space-saving high-strength laminates suited for heavy 1L to 5L refill configurations.",
-        badge: "Bulk Refills"
+        name: "3-Side Seal & Bulk Refill Pouches",
+        desc: "Heavy-duty laminates suited for 500ml to 5L refill packs.",
+        badge: "Bulk Refill"
       }
     ]
   },
 
   testimonials: {
-    badge: "Client Social Proof",
+    badge: "Client Feedback",
     title: "Trusted by Packaging Converters & FMCG Brands",
-    subtitle: "Real feedback from production heads, packaging converters, and brand owners who rely on BSA Packaging for zero-leak sealing and dependable delivery.",
-    note: "Verified B2B Client Reviews (Representative Data Ready for Live Swaps)",
+    subtitle: "Feedback from production managers, packaging converters, and brand teams working with BSA Packaging across Delhi NCR, Gujarat, and Pan-India.",
+    note: "Representative Client Testimonials (Editable in siteData.js)",
     clientLogos: [
       { name: "PurePulse Beverages", sector: "Ready Beverages", city: "Delhi NCR" },
-      { name: "Gusto Gourmet Sauces", sector: "FMCG Condiments", city: "Ahmedabad, Gujarat" },
-      { name: "CleanMax Care Labs", sector: "Homecare & Detergents", city: "Surat, Gujarat" },
+      { name: "Gusto Gourmet Sauces", sector: "Condiments", city: "Ahmedabad, Gujarat" },
+      { name: "CleanMax Care Labs", sector: "Homecare", city: "Surat, Gujarat" },
       { name: "Apex Flexible Laminations", sector: "Pouch Converter", city: "Greater Noida, UP" },
-      { name: "KisanAgro Bio-Solutions", sector: "Agri-Chemicals", city: "Rajkot, Gujarat" }
+      { name: "KisanAgro Bio-Solutions", sector: "Agri-Inputs", city: "Rajkot, Gujarat" }
     ],
     reviews: [
       {
         id: "rev-1",
-        quote: "Switching to BSA's Flip-Top Spouts was a game-changer for our fruit beverage line. Our customers always complained about losing the screw caps while drinking. The flip-top solved that instantly, and BSA's 0.8s weld hasn't given us a single leak in 250,000 pouches.",
+        quote: "Moving our beverage pouches to BSA's Flip-Top Spouts solved the loose cap issue our customers kept mentioning. Across 250,000 pouches, their 0.8s weld has held up cleanly without leaks.",
         author: "Rajesh Varma",
         role: "Head of Packaging Operations",
-        company: "Gourmet Beverage Brand",
+        company: "PurePulse Beverages",
         location: "Delhi NCR",
         serviceUsed: "Flip-Top Spouts & In-House Sealing",
         rating: 5,
-        metric: "250K+ Pouches • 0% Leakage"
+        metric: "250K+ Pouches Sealed"
       },
       {
         id: "rev-2",
-        quote: "For our large mayonnaise pouch batches in Gujarat, sending empty pouches to UP made no logistics sense. BSA dispatched a team of 4 skilled technicians with portable tooling directly to our plant in Sanand. They completed 180,000 spouts in 10 days with stellar precision.",
+        quote: "Shipping bulk empty pouches from Gujarat to UP wasn't practical for our mayonnaise line. BSA sent 4 trained technicians to our Sanand plant, completing 180,000 spouts in 10 days right alongside our production.",
         author: "Manish Patel",
         role: "Director of Supply Chain",
-        company: "Condiment & Culinary Co.",
+        company: "Gusto Gourmet Sauces",
         location: "Ahmedabad, Gujarat",
-        serviceUsed: "On-Site Factory Job Work",
+        serviceUsed: "On-Site Contract Job Work",
         rating: 5,
-        metric: "On-Premise Execution in Gujarat"
+        metric: "On-Site in Gujarat"
       },
       {
         id: "rev-3",
-        quote: "As a digital packaging converter, we print small-to-mid runs for emerging direct-to-consumer brands. BSA Packaging handles all our spout fixing in Greater Noida. Their 12 semi-automatic machines allow them to turn around 30,000 pouches in 48 hours without compromising weld quality.",
+        quote: "As a digital pouch converter, we handle fast-turnaround orders for D2C brands. BSA Packaging manages our spout fixing in Greater Noida. Their 12 machines turn around 30,000 pouches within 48 hours reliably.",
         author: "Amitabh Singhal",
         role: "Managing Director",
-        company: "Apex Lamination & Packaging",
+        company: "Apex Flexible Laminations",
         location: "Greater Noida (West), UP",
         serviceUsed: "In-House Spout Fixing",
         rating: 5,
-        metric: "48-Hour Rapid Turnaround"
+        metric: "48-Hour Turnaround"
       },
       {
         id: "rev-4",
-        quote: "Liquid detergents and surfactants are notorious for leaking along the boat seam if the sealing temperature fluctuates even slightly. BSA's 2-step hot press and instant cold lock technique gives an ironclad seal that easily passed our 1.5m drop tests.",
+        quote: "Detergents and surfactants easily exploit weak pouch seams if sealing temperature drifts. BSA's hot press followed by instant cold press gives a clean, uniform weld that passed our 1.5m drop tests.",
         author: "Dr. Sunita Rao",
         role: "Technical Quality Lead",
-        company: "CleanMax Hygiene Solutions",
-        location: "Surat / Mumbai",
-        serviceUsed: "Standard Screw-Cap Spouts (20mm)",
+        company: "CleanMax Care Labs",
+        location: "Surat, Gujarat",
+        serviceUsed: "Screw-Cap Spouts (20mm)",
         rating: 5,
-        metric: "Passed 1.5m Drop Tests"
+        metric: "Passed 1.5m Drop Test"
       }
     ]
   },
 
   reachAndTrust: {
-    badge: "Strategic Operational Footprint",
-    title: "Serving Delhi NCR, Gujarat, and Industrial Hubs Pan-India",
-    subtitle: "Combining our high-throughput Greater Noida (West) facility with agile on-site technician deployment across India's premier packaging corridors.",
+    badge: "Operational Network",
+    title: "Serving Greater Noida, Delhi NCR, Gujarat & Pan-India",
+    subtitle: "Combining our central manufacturing unit in Knowledge Park V, Greater Noida (West) with deployable technician teams for on-site contract work nationwide.",
     hubs: [
       {
         region: "Greater Noida (West) HQ",
-        state: "Uttar Pradesh",
-        role: "Central Production & Spout Trading Facility",
+        state: "Knowledge Park V, Uttar Pradesh",
+        role: "Central Spout Fixing & Trading Facility",
         features: [
-          "Fleet of 12 semi-automatic pneumatic sealing machines",
-          "Dedicated cleanroom batch staging & packaging area",
-          "Large ready inventory of imported spouts (8.5mm to 28mm)",
-          "Central QC lab with hydrostatic pressure burst testing"
+          "12 semi-automatic pneumatic spout sealing machines",
+          "Organized batch staging and carton packing floor",
+          "Ready stock of imported spouts (8.5mm to 28mm)",
+          "In-house hydrostatic pressure and drop-test verification"
         ]
       },
       {
-        region: "Delhi NCR Expressway Belt",
+        region: "Delhi NCR Industrial Belt",
         state: "Delhi, Noida, Ghaziabad, Faridabad, Gurugram",
-        role: "Same-Day / Next-Day Logistics Corridor",
+        role: "Express Regional Logistics Corridor",
         features: [
-          "Direct door-to-door transit for regional food & beverage brands",
-          "Express sampling service for new pouch pilot trials",
-          "Immediate emergency technician dispatch within 4 hours",
-          "Routine technical alignment with local printing/pouch converters"
+          "Fast pickup and delivery for NCR FMCG & beverage brands",
+          "Quick trial welds for pouch converters and laminate printers",
+          "Prompt on-site technical support across NCR plants",
+          "Dedicated coordination for recurring monthly runs"
         ]
       },
       {
-        region: "Gujarat Manufacturing Corridor",
+        region: "Gujarat Packaging Corridor",
         state: "Ahmedabad, Sanand, Rajkot, Surat, Vadodara",
-        role: "Dedicated On-Site Job Work Hub",
+        role: "On-Site Factory Job Work Network",
         features: [
-          "Active deployment of mobile technician teams for high-volume batches",
-          "Zero inter-state freight transit risk on massive pouch consignments",
-          "Strong partner network across food processing & chemical plants",
-          "Bilingual supervisors (Hindi/Gujarati/English) for seamless on-floor coordination"
+          "Trained fixing crews dispatched directly to your factory floor",
+          "Saves two-way interstate freight and prevents pouch scuffing",
+          "Experienced across edible oil, sauce, and chemical plants",
+          "Supervisor oversight with shift-wise QC logs"
         ]
       },
       {
-        region: "Pan-India Logistics & Contract Work",
-        state: "Maharashtra, South India, Punjab, Madhya Pradesh & Beyond",
-        role: "National Spout Supply & Scheduled Crew Deployment",
+        region: "Pan-India Supply & Execution",
+        state: "Maharashtra, Punjab, MP, South India & Nationwide",
+        role: "Bulk Spout Trading & Contract Teams",
         features: [
-          "Scheduled mobile crew deployment for pan-India contract runs",
-          "Safe palletized freight of imported spouts to any postal PIN in India",
-          "Remote technical consultation for pouch geometry and boat fitment",
-          "Transparent GST billing and formal manufacturing service contracts"
+          "Scheduled on-site job work deployment across major states",
+          "Bulk dispatch of imported screw-cap & flip-top spouts",
+          "Technical guidance on pouch boat alignment and film specs",
+          "Formal GST billing and B2B job-work documentation"
         ]
       }
     ]
   },
 
   quoteForm: {
-    badge: "Fast B2B Response",
-    title: "Request a Bulk Quote or Physical Sample Kit",
-    subtitle: "Get transparent tiered pricing for spout fixing, spout trading, or on-site job work within 2-4 business hours. Samples dispatched via courier across India.",
+    badge: "B2B Inquiry & Sampling",
+    title: "Request a Bulk Quote or Sample Kit",
+    subtitle: "Share your pouch volume, spout diameter, or on-site job work location. Our commercial team responds within 2–4 business hours.",
     services: [
       "In-House Spout Fixing (Greater Noida Facility)",
       "Spout Supply / Trading Only (Imported Bulk)",
@@ -393,45 +396,44 @@ export const siteData = {
   },
 
   faq: {
-    badge: "B2B Procurement FAQs",
-    title: "Frequently Asked Questions",
-    subtitle: "Direct answers to key procurement, technical sealing, on-site job work, and sampling questions for factory owners and brand managers.",
+    badge: "Frequently Asked Questions",
+    title: "Procurement & Technical FAQs",
+    subtitle: "Straightforward answers on minimum batch quantities, sealing quality, on-site deployment, and sample testing.",
     items: [
       {
         question: "What is the Minimum Order Quantity (MOQ) for spout fixing at BSA Packaging?",
-        answer: "For in-house batch spout fixing at our Greater Noida (West) facility, our pilot batch begins at 10,000 pouches, scaling up to monthly recurring contracts of 500,000+ pouches. For on-site factory contract job work (dispatching our technicians to your facility in Gujarat, Delhi NCR, or other states), the standard volume threshold starts at 50,000 pouches to optimize crew logistics and tooling setup."
+        answer: "For in-house batch spout fixing at our Greater Noida (West) unit, pilot batches start at 10,000 pouches, scaling up to monthly recurring contracts of 500,000+ pouches. For on-site contract job work in Gujarat, Delhi NCR, or other states, batch volumes typically start at 50,000 pouches to justify crew mobilization."
       },
       {
-        question: "How does BSA Packaging's 2-step 0.8s hot press and cold press guarantee zero leakage?",
-        answer: "Manual or single-step heat sealing often leads to microscopic pinholes or warped seams during liquid transit. We use an automated 2-step cycle: Step 1 (0.8s High-Temp Hot Press) liquefies and fuses the sealant PE layer of the pouch with the spout boat under calibrated pneumatic pressure. Step 2 (Instant Cold Press Lock) immediately quenches and recrystallizes the polymer matrix, eliminating seal stress and locking the seam for 100% leak-proof reliability."
+        question: "How does your 2-step 0.8s hot press and cold press prevent leakage?",
+        answer: "Single-step sealing often leaves stress points or microscopic pinholes when pouches cool slowly. Our 12 machines execute an automated 2-step cycle: Step 1 (0.8s High-Temp Hot Press) fuses the inner PE sealant film with the spout boat; Step 2 (Instant Cold Press Lock) immediately quenches the seam under pressure to set the polymer cleanly with zero warping."
       },
       {
         question: "How does Pan-India On-Site Contract Job Work operate in Gujarat and other states?",
-        answer: "BSA Packaging dispatches certified technicians, machine operators, and supervisors directly to your plant premises in industrial belts like Sanand, Ahmedabad, Surat, Rajkot, or Delhi NCR. Our crew operates with specialized portable sealing units alongside your pouch printing or filling lines. This eliminates inter-state freight transit costs, reduces turnaround lead times, and avoids scuffing or transit wear on bulk pre-printed pouches."
+        answer: "BSA Packaging sends trained operators and supervisors directly to your manufacturing premises across Gujarat (Sanand, Ahmedabad, Surat, Rajkot), Delhi NCR, or other states. Our team works alongside your printing or filling lines, eliminating two-way interstate transport costs and transit scuffing on bulk pouches."
       },
       {
-        question: "What is the difference between assembled and unassembled spouts, and which should I choose?",
-        answer: "Assembled Spouts arrive with the screw cap or flip-top pre-torqued onto the spout nozzle. They are ideal if you fill pouches from the unsealed bottom or side gusset on form-fill-seal machines. Unassembled Spouts are supplied with the spout body and loose caps in separate bulk crates, specifically engineered for high-speed automated top-spout filling lines where product is injected at high speed through the open neck bore before rotary capping."
+        question: "What is the difference between assembled and unassembled spouts?",
+        answer: "Assembled Spouts arrive with the screw cap or flip-top already attached to the spout body — ideal if you fill pouches from the open bottom or side seam before sealing. Unassembled Spouts provide the spout body and loose caps separately, built for automated top-spout filling machines followed by mechanical rotary capping."
       },
       {
-        question: "What pouch substrates and liquid formulations are compatible with your spouts?",
-        answer: "Our 0.8s dual-action tooling seals across stand-up Doypack pouches, digital short-run laminates, plain silver/metallic foil barrier pouches, and 3-side seal refill pouches. We pack and seal for diverse liquids including acidic fruit juices, thick mayonnaise, tomato ketchups, ginger-garlic paste, foaming handwash, concentrated dishwash gels, laundry detergents, shampoos, motor coolants, and agricultural seed/chemical concentrates."
+        question: "Which pouch films and liquid products can be sealed with your spouts?",
+        answer: "Our tooling works reliably on stand-up Doypack pouches, digital short-run laminates, silver metallic foil barrier pouches, and 3-side seal refill pouches. Supported products include fruit juices, mayonnaise, tomato ketchup, cooking pastes, handwash, dishwash gels, liquid detergents, personal care lotions, coolants, and agro-chemicals."
       },
       {
-        question: "How quickly can I receive physical sample kits or custom laminate test welds?",
-        answer: "Physical sample kits—including sample sealed pouches, standard screw-cap spouts in various mm sizes, and consumer flip-top spouts—are dispatched via express courier across India within 24 hours. Furthermore, you can ship 10–20 unsealed mockups of your printed pouch film to our Greater Noida facility for free pilot weld trials and certified hydrostatic burst pressure testing."
+        question: "How can I test my own laminated pouches before placing a bulk order?",
+        answer: "We courier physical sample kits (containing welded pouch samples, screw-cap spouts, and flip-top spouts) across India within 24 hours. You can also send 10–20 of your unsealed pouches to our Greater Noida facility for complimentary trial welding and burst pressure verification."
       }
     ]
   },
 
   navigation: [
-    { label: "Factory Tour", href: "#factory-tour" },
+    { label: "Factory", href: "#factory-tour" },
     { label: "Services", href: "#services" },
-    { label: "Spout Types", href: "#spout-catalog" },
+    { label: "Spouts", href: "#spout-catalog" },
     { label: "Industries", href: "#industries" },
-    { label: "Client Reviews", href: "#reviews" },
-    { label: "Pan-India", href: "#reach" },
-    { label: "FAQ", href: "#faq" },
-    { label: "Get Quote", href: "#quote" }
+    { label: "Reviews", href: "#reviews" },
+    { label: "Locations", href: "#reach" },
+    { label: "FAQ", href: "#faq" }
   ]
 };
